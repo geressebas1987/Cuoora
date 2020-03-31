@@ -12,7 +12,7 @@
 		"fecha",
 		"hora",
 		"followers",
-		"topicos"
+		"topico"
 	],
 	"name" : "Usuario",
 	"type" : "normal"
