@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "1-TP-Objetos-2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"usuarios",
+		"topicos",
+		"preguntas"
+	],
+	"name" : "Cuoora",
+	"type" : "normal"
+}
