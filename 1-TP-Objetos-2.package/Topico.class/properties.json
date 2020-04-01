@@ -6,15 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"ID",
+		"nombre",
 		"descripcion",
-		"fecha",
-		"hora",
-		"pregunta",
-		"likes",
-		"dislikes",
-		"usuario"
+		"pregunta"
 	],
-	"name" : "Respuesta",
+	"name" : "Topico",
 	"type" : "normal"
 }
