@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "1-TP-Objetos-2-model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"estado",
+		"user"
+	],
+	"name" : "Gusto",
+	"type" : "normal"
+}
