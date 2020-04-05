@@ -11,8 +11,7 @@
 		"fecha",
 		"hora",
 		"pregunta",
-		"likes",
-		"dislikes",
+		"gustos",
 		"usuario"
 	],
 	"name" : "Respuesta",

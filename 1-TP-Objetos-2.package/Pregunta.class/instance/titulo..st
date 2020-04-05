@@ -1,3 +1,5 @@
 accessing
 titulo: unTitulo
-	titulo := unTitulo.
+	"setter de titulo"
+
+	titulo:= unTitulo.
