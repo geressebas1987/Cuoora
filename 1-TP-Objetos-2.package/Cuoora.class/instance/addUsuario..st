@@ -1,5 +1,5 @@
 acccessing
-usuarios: unUsuario
+addUsuario: unUsuario
 	"agrega un nuevo usuario a Cuoora"
 	
-	usuarios:= unUsuario.
+	usuarios add: unUsuario.

@@ -5,4 +5,4 @@ agregarTopico: unNombre descripcion: unaDescripcion
 	|nuevoTopico|
 	nuevoTopico := Topico new.
 	nuevoTopico initializeConNombre: unNombre descripcion: unaDescripcion. 
-	^self topicos: nuevoTopico.
+	^self addTopico: nuevoTopico.

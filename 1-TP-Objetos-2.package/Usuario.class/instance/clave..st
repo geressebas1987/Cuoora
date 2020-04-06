@@ -1,3 +1,3 @@
-initialization
+accessing
 clave: unaClave
 	clave:= unaClave

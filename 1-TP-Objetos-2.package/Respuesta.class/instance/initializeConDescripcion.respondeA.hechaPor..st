@@ -1,4 +1,4 @@
-initialize
+initialization
 initializeConDescripcion: unaDescripcion respondeA: unaPregunta hechaPor:unUsuario
 	"Crea la respuesta con los parametros recibidos"
 

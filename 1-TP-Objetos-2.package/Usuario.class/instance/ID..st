@@ -1,5 +1,5 @@
 accessing
-nombre: unNombre
+ID: unID
 	"comment stating purpose of message"
 
-	nombre:= unNombre.
+	ID:= unID.

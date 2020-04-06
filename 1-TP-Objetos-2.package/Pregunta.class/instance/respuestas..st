@@ -1,5 +1,5 @@
-initialization
+accessing
 respuestas: unaRespuesta
 	"setter de respuesta"
 
-	respuestas add: unaRespuesta.
+	respuestas := unaRespuesta.

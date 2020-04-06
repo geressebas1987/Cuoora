@@ -1,5 +1,5 @@
 acccessing
-topicos: unTopico
+addTopico: unTopico
 	"agrega un nuevo topico a Cuoora"
 	
-	topicos:= unTopico. 
+	topicos add: unTopico. 

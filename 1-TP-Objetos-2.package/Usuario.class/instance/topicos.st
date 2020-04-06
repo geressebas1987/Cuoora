@@ -1,3 +1,3 @@
-initialization
+accessing
 topicos 
 	^topicos
