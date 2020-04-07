@@ -4,6 +4,6 @@ initializeConDescripcion: unaDescripcion respondeA: unaPregunta hechaPor:unUsuar
 
 	^self descripcion: unaDescripcion;
 			pregunta: unaPregunta;
-			usuario:unUsuario;
+			usuario: unUsuario;
 		 	hora: Time now;
 		 	fecha: Date today.
