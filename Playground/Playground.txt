@@ -1,0 +1,26 @@
+|miCuoora miUsuario miOtroUsuario otroUsuario miPregunta miTopico|
+
+miCuoora := Cuoora new.
+miTopico := Topico new.
+miTopico initializeConNombre:'Juegos' descripcion:'Info actualizada sobre juegos'.
+"miCuoora agregarTopico: 'Juegos' descripcion:'Info actualizada sobre juegos'."
+miCuoora agregarTopico: 'Deportes' descripcion:'Info actualizada sobre 
+deportes'.
+miCuoora addTopico: miTopico.
+miUsuario := Usuario new.
+otroUsuario := Usuario new.
+miOtroUsuario := Usuario new.
+miUsuario initializeConNombre:'Sebastian Calderon' conClave:'123456'.
+otroUsuario initializeConNombre:'Matias Murguia' conClave:'123456'.
+miOtroUsuario initializeConNombre:'Jona Solar' conClave:'123456'.
+miUsuario addTopico: miTopico.
+miCuoora addUsuario: miUsuario.
+miCuoora addUsuario: otroUsuario.
+miCuoora addUsuario: miOtroUsuario.
+miCuoora agregarPregunta:'Que juegos sobre comida me recomiendan?' conDescripcion: 'Me interesan muchos los juegos sobre comida y queria consultar a los que saben.' tema:miTopico hechaPor:miUsuario. 
+miPregunta := Pregunta new.
+miPregunta agregarPregunta: 'Y para PC cuales me recomiendan?' conDescripcion: 'Me interesan muchos los juegos sobre comida, pero para PC unicamente.' tema:miTopico hechaPor:miUsuario.
+miCuoora agregarUnaRespuesta: 'Te recomiendo la saga Cooking Chef para PC' respondeA:miPregunta hechaPor:otroUsuario.
+miCuoora addPregunta:miPregunta.
+miUsuario addFollowers:otroUsuario.
+miUsuario addFollowers:miOtroUsuario.
