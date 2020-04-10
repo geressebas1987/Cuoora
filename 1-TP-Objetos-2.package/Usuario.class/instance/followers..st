@@ -1,3 +1,3 @@
 accessing
-followers: unUsuario
-	followers add: unUsuario 
+followers: unaColeccion
+	followers:= unaColeccion.

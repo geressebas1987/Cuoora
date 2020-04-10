@@ -6,4 +6,6 @@ agregarPregunta: unTitulo conDescripcion: unaDescripcion tema:unTopico hechaPor:
 	
 	nuevaPregunta := Pregunta new.
 	nuevaPregunta agregarPregunta: unTitulo conDescripcion: unaDescripcion tema:unTopico hechaPor:unUsuario.
-	self addPregunta:nuevaPregunta.
+	unUsuario addPregunta: nuevaPregunta.
+	self addPregunta: nuevaPregunta.
+	

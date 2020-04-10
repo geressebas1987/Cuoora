@@ -1,3 +1,3 @@
 accessing
-topicos: unTopico
-	topicos add: unTopico
+topicos: unaColeccion
+	topicos:= unaColeccion

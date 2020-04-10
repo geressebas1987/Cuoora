@@ -5,4 +5,5 @@ agregarUnaRespuesta:unaDescripcion respondeA:unaPregunta hechaPor:unUsuario
 	| respuesta |
 	respuesta:= Respuesta new.
 	respuesta initializeConDescripcion: unaDescripcion respondeA: unaPregunta hechaPor:unUsuario.
-	self respuestas: respuesta.
+	unaPregunta addRespuesta: respuesta.
+	unUsuario addRespuesta: respuesta.

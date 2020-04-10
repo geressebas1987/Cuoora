@@ -11,7 +11,9 @@
 		"fecha",
 		"hora",
 		"followers",
-		"topicos"
+		"topicos",
+		"preguntas",
+		"respuestas"
 	],
 	"name" : "Usuario",
 	"type" : "normal"
