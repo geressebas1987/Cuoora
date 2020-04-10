@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"ID",
 		"nombre",
 		"clave",
 		"fecha",
