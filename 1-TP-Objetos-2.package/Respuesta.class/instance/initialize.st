@@ -2,6 +2,7 @@ initialization
 initialize
 	"Inicializa las variables luego de ejectuarse el new"
 
+	super initialize.
 	fecha := Date today.
 	hora := Time now.
-	gustos := OrderedCollection new.
+	gustos := OrderedCollection new

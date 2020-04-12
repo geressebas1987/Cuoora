@@ -2,5 +2,5 @@ initialization
 initializeConNombre: unNombre descripcion: unaDescripcion
 	"inicializa un topico"
 
-	^self nombre:unNombre;
-		  descripcion:unaDescripcion.
+	nombre := unNombre.
+	descripcion := unaDescripcion

@@ -7,8 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"nombre",
-		"descripcion",
-		"pregunta"
+		"descripcion"
 	],
 	"name" : "Topico",
 	"type" : "normal"
