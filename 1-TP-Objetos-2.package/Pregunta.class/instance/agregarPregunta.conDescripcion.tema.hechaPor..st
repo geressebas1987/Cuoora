@@ -1,8 +1,12 @@
 actions
-agregarPregunta: unTitulo conDescripcion:unaDescripcion tema:unTopico hechaPor:unUsuario
+agregarPregunta: unTitulo conDescripcion: unaDescripcion tema: unTopico hechaPor: unUsuario
 	"agrega una pregunta nueva a Cuora"
-	
-	^self titulo: unTitulo;
-			descripcion: unaDescripcion;
-			addTopico: unTopico;
-			usuario: unUsuario.
+
+	| unaPregunta |
+	unaPregunta := self
+		titulo: unTitulo;
+		descripcion: unaDescripcion;
+		addTopico: unTopico;
+		usuario: unUsuario.
+	unUsuario addPregunta: unaPregunta.
+	^ unaPregunta.
