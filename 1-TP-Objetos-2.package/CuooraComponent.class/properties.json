@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WAComponent",
+	"category" : "1-TP-Objetos-2-ui",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"miCuora"
+	],
+	"name" : "CuooraComponent",
+	"type" : "normal"
+}
