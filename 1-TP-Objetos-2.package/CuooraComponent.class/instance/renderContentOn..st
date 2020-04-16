@@ -1,6 +1,6 @@
 rendering
 renderContentOn: aCanvas
-	aCanvas paragraph with: [ aCanvas strong with: 'Cuoora' ].
+	aCanvas paragraph with: [ aCanvas strong with: 'CuOOra' ].
 	aCanvas
 		form: [ aCanvas
 				paragraph: [ aCanvas label: 'Usuario: '
