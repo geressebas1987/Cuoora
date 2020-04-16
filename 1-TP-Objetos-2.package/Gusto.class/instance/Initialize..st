@@ -1,3 +1,3 @@
 as yet unclassified
-Initialize: unUsuario
+initialize: unUsuario
 	^self subclassResponsibility

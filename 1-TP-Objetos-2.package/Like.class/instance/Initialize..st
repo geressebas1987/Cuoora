@@ -1,5 +1,5 @@
 instance creation
-Initialize: unUsuario
+initialize: unUsuario
 	estado:= 1.
 	user:= unUsuario.
 	

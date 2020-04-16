@@ -1,4 +1,4 @@
 as yet unclassified
-Initialize: unUsuario
+initialize: unUsuario
 	estado:= -1.
 	user:= unUsuario.

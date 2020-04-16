@@ -1,3 +1,3 @@
 accessing
 change 
-	^Dislike new: user
+	^Dislike new: self user.

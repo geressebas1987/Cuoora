@@ -1,3 +1,3 @@
 accessing
 change 
-	^Like new: user
+	^Like new: self user.
