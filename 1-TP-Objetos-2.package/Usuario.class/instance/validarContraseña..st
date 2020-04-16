@@ -1,3 +1,3 @@
 validations
 validarContraseña: unaContraseña
-	^clave equals: unaContraseña 
+	^clave == unaContraseña 
