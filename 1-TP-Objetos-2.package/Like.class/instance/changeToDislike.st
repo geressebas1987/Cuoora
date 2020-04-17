@@ -1,3 +1,3 @@
 accessing
-change 
+changeToDislike
 	^Dislike new initialize: self user.

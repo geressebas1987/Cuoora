@@ -1,10 +1,8 @@
 accessing
 addDislike: unUsuario
-	| unDislike |
-	unDislike := Dislike new.
-	self gustos
-		detect: [ :gusto | 
-			gusto usuario == unUsuario
-				ifTrue: [ gusto estado = -1
-						ifFalse: [ gusto change ] ] ]
-		ifNone: [ self gustos add: (unDislike initialize: unUsuario) ]
+	|unGusto|
+	(self gustos isNotEmpty) ifTrue: [ unGusto := self gustos detect: [:cadaGusto | cadaGusto user nombre = unUsuario nombre ]
+																 ifNone:[ self gustos add: (Dislike new initialize: unUsuario) ] ]
+									ifFalse: [ self gustos add: (Dislike new initialize: unUsuario)].
+	unGusto ifNotNil:[self gustos remove: unGusto.
+							self gustos add:(unGusto changeToDislike)].
