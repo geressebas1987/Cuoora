@@ -1,26 +1,46 @@
-|miCuoora miUsuario miOtroUsuario otroUsuario miPregunta miTopico|
+|miCuoora userSebas userJona userMati miPregunta jonaPregunta jonaPregunta2 matiPregunta topicoJuegos topicoComida |
 
 miCuoora := Cuoora new.
-miTopico := Topico new.
-miTopico initializeConNombre:'Juegos' descripcion:'Info actualizada sobre juegos'.
-"miCuoora agregarTopico: 'Juegos' descripcion:'Info actualizada sobre juegos'."
+topicoJuegos := Topico new.
+topicoComida := Topico new.
+topicoJuegos initializeConNombre:'Juegos' descripcion:'Info actualizada sobre juegos'.
+miCuoora agregarTopico: 'Juegos' descripcion:'Info actualizada sobre juegos'.
 miCuoora agregarTopico: 'Deportes' descripcion:'Info actualizada sobre 
 deportes'.
-miCuoora addTopico: miTopico.
-miUsuario := Usuario new.
-otroUsuario := Usuario new.
-miOtroUsuario := Usuario new.
-miUsuario initializeConNombre:'Sebastian Calderon' conClave:'123456'.
-otroUsuario initializeConNombre:'Matias Murguia' conClave:'123456'.
-miOtroUsuario initializeConNombre:'Jona Solar' conClave:'123456'.
-miUsuario addTopico: miTopico.
-miCuoora addUsuario: miUsuario.
-miCuoora addUsuario: otroUsuario.
-miCuoora addUsuario: miOtroUsuario.
-miCuoora agregarPregunta:'Que juegos sobre comida me recomiendan?' conDescripcion: 'Me interesan muchos los juegos sobre comida y queria consultar a los que saben.' tema:miTopico hechaPor:miUsuario. 
+topicoComida initializeConNombre:'Comida' descripcion:'Info actualizada sobre alimentos'.
+miCuoora addTopico: topicoJuegos.
+miCuoora addTopico: topicoComida.
+userSebas := Usuario new.
+userMati := Usuario new.
+userJona := Usuario new.
+userSebas initializeConNombre:'Sebastian Calderon' conClave:'123456'.
+userMati initializeConNombre:'Matias Murguia' conClave:'123456'.
+userJona initializeConNombre:'Jona Solar' conClave:'123456'.
+userSebas addTopico: topicoJuegos.
+userSebas addTopico: topicoComida.
+miCuoora addUsuario: userSebas.
+miCuoora addUsuario: userMati.
+miCuoora addUsuario: userJona.
+miCuoora agregarPregunta:'Que juegos sobre comida me recomiendan?' conDescripcion: 'Me interesan muchos los juegos sobre comida y queria consultar a los que saben.' tema: topicoComida hechaPor: userSebas. 
 miPregunta := Pregunta new.
-miPregunta agregarPregunta: 'Y para PC cuales me recomiendan?' conDescripcion: 'Me interesan muchos los juegos sobre comida, pero para PC unicamente.' tema:miTopico hechaPor:miUsuario.
-miCuoora agregarUnaRespuesta: 'Te recomiendo la saga Cooking Chef para PC' respondeA:miPregunta hechaPor:otroUsuario.
-miCuoora addPregunta:miPregunta.
-miUsuario addFollowers:otroUsuario.
-miUsuario addFollowers:miOtroUsuario.
+jonaPregunta := Pregunta new.
+jonaPregunta2 := Pregunta new.
+matiPregunta := Pregunta new.
+miPregunta agregarPregunta: 'Y para PC cuales me recomiendan?' conDescripcion: 'Me interesan muchos los juegos sobre comida, pero para PC unicamente.' tema: topicoJuegos hechaPor: userSebas.
+jonaPregunta agregarPregunta: 'Que juego es el mejor?' conDescripcion: 'Me interesan mucho los juegos.' tema: topicoJuegos hechaPor: userJona.
+jonaPregunta2 agregarPregunta: 'Que comida es la mas rica?' conDescripcion: 'Me interesa mucho la comida.' tema: topicoComida hechaPor: userJona.
+matiPregunta agregarPregunta: 'Comidas sanas?' conDescripcion: 'Me gusta mucho la comida sana.' tema: topicoComida hechaPor: userMati.
+miCuoora agregarUnaRespuesta: 'Te recomiendo la saga Cooking Chef para PC' respondeA:miPregunta hechaPor: userMati.
+miCuoora addPregunta: miPregunta.
+miCuoora addPregunta: jonaPregunta.
+miCuoora addPregunta: jonaPregunta2.
+miCuoora addPregunta: matiPregunta.
+userSebas addFollowers: userMati.
+userSebas addFollowers: userJona.
+miPregunta addTopico: topicoComida.
+miCuoora preguntasDeUnTopico: 'Comida'.
+miCuoora topicos.
+miCuoora preguntasDeInteres: userSebas.
+miPregunta addDislike: userJona.
+miPregunta addLike: userJona.
+miPregunta addDislike: userJona.
